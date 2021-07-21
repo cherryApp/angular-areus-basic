@@ -1,0 +1,20 @@
+<table class="table" id="hero-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Desc.</th>
+      <th>SP.</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hero of list">
+      <td>{{ hero.id }}</td>
+      <td>{{ hero.name }}</td>
+      <td>{{ hero.descriptin }}</td>
+      <td>{{ hero.superPower }}</td>
+      <td>{{ hero.active }}</td>
+    </tr>
+  </tbody>
+</table>
