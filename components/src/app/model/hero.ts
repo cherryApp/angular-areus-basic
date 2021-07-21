@@ -4,4 +4,5 @@ export class Hero {
   descriptin: string = '';
   superPower: string = '';
   active: boolean = true;
+  insert: number = 0;
 }
