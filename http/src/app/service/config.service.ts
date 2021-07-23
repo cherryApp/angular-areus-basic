@@ -11,10 +11,11 @@ export interface ITableColumn {
 export class ConfigService {
 
   userCols: ITableColumn[] = [
-    {key: 'id', title: '#'},
     {key: 'firstName', title: 'First Name'},
     {key: 'lastName', title: 'Last Name'},
     {key: 'email', title: 'Email'},
+    {key: 'active', title: 'Active'},
+    {key: 'ip_address', title: 'IP.'},
   ];
 
   constructor() { }

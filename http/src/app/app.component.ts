@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { interval, Observable, Subscription } from 'rxjs';
 import { User } from './model/user';
+import { ConfigService, ITableColumn } from './service/config.service';
 import { UserService } from './service/user.service';
 
 @Component({
@@ -18,10 +19,12 @@ export class AppComponent implements OnInit, OnDestroy {
   footballSubscription: Subscription = new Subscription();
 
   userList$: Observable<User[]> = this.userService.getAll();
+  userCols: ITableColumn[] = this.config.userCols;
 
   constructor(
     private http: HttpClient,
     private userService: UserService,
+    private config: ConfigService,
   ) {
     // const o2 = new Observable<number>( observer => {
     //   setInterval( () => {
@@ -59,10 +62,10 @@ export class AppComponent implements OnInit, OnDestroy {
       () => console.log('http observable has been completed')
     );
 
-    this.userList$.subscribe(
-      users => console.log(users),
-      err => console.error(err)
-    );
+    // this.userList$.subscribe(
+    //   users => console.log(users),
+    //   err => console.error(err)
+    // );
 
   }
 
