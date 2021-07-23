@@ -17,6 +17,7 @@ export class AppComponent implements OnInit, OnDestroy {
     return `${this.counter} db`;
   }
   footballSubscription: Subscription = new Subscription();
+  phrase: string = '';
 
   userList$: Observable<User[]> = this.userService.getAll();
   userCols: ITableColumn[] = this.config.userCols;
