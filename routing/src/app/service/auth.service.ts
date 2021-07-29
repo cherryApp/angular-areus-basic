@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { User } from '../model/user';
@@ -16,6 +17,7 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
+    private router: Router,
   ) {
     if (localStorage.currentUser) {
       const user: User = JSON.parse(localStorage.currentUser);
@@ -25,13 +27,14 @@ export class AuthService {
   }
 
   login(loginData: User): Observable<User | null> {
-    return this.http.post<User | null>(this.loginUrl, loginData).pipe(
-      map( user => {
-        if (user && user.accessToken) {
-          this.lastToken = user.accessToken;
-          this.currentUserSubject$.next(user);
-          localStorage.setItem('currentUser', JSON.stringify(user));
-          return user;
+    return this.http.post<{user: User, accessToken: string}>(this.loginUrl, loginData).pipe(
+      map( response => {
+        if (response.user && response.accessToken) {
+          this.lastToken = response.accessToken;
+          response.user.accessToken = response.accessToken;
+          this.currentUserSubject$.next(response.user);
+          localStorage.setItem('currentUser', JSON.stringify(response.user));
+          return response.user;
         }
         return null;
       })
@@ -42,5 +45,6 @@ export class AuthService {
     this.lastToken = '';
     this.currentUserSubject$.next(null);
     localStorage.removeItem('currentUser');
+    this.router.navigate(['/', 'login']);
   }
 }
