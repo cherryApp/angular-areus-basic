@@ -10,16 +10,20 @@
   </div>
   <div class="row">
     <div class="col-10 offset-1">
-      <table class="table">
+      <table class="table data-table">
         <thead>
           <tr>
-            <th *ngFor="let col of userCols">
+            <th *ngFor="let col of userCols" (click)="onSort(col.key)">
               {{ col.title }}
+              <i *ngIf="sortKey === col.key && sortDirection === 1"
+                class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+              <i *ngIf="sortKey === col.key && sortDirection === -1"
+                class="fa fa-sort-amount-desc" aria-hidden="true"></i>
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let user of userList$ | async | filter:phrase">
+          <tr *ngFor="let user of userList$ | async | filter:phrase | sort:sortKey:sortDirection">
             <td *ngFor="let col of userCols">
               {{ user[col.key] }}
             </td>

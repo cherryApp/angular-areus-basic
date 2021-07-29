@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "07f59dff-e950-4d82-86a4-2644ae4acfe0"
+    "analytics": "3dc33251-d082-428b-a69b-909a5c86ef63"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "http": {
+    "routing": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/http",
+            "outputPath": "dist/routing",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "http:build:production"
+              "browserTarget": "routing:build:production"
             },
             "development": {
-              "browserTarget": "http:build:development"
+              "browserTarget": "routing:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "http:build"
+            "browserTarget": "routing:build"
           }
         },
         "test": {
@@ -111,5 +111,5 @@
       }
     }
   },
-  "defaultProject": "http"
+  "defaultProject": "routing"
 }

@@ -18,6 +18,8 @@ export class AppComponent implements OnInit, OnDestroy {
   }
   footballSubscription: Subscription = new Subscription();
   phrase: string = '';
+  sortDirection: number = 1;
+  sortKey: string = '';
 
   userList$: Observable<User[]> = this.userService.getAll();
   userCols: ITableColumn[] = this.config.userCols;
@@ -68,6 +70,16 @@ export class AppComponent implements OnInit, OnDestroy {
     //   err => console.error(err)
     // );
 
+  }
+
+  onSort(key: string): void {
+    if (key === this.sortKey) {
+      this.sortDirection *= -1;
+    } else {
+      this.sortDirection = 1;
+    }
+
+    this.sortKey = key;
   }
 
   ngOnDestroy() {

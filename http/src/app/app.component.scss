@@ -1,0 +1,12 @@
+.data-table {
+  thead {
+    tr {
+      th {
+        &:hover {
+          background-color: aquamarine;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
