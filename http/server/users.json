@@ -6,7 +6,8 @@
       "lastName": "McAnalley",
       "email": "amcanalley0@posterous.com",
       "active": true,
-      "ip_address": "51.62.63.45"
+      "ip_address": "51.62.63.45",
+      "password": "$2a$10$xaFnT4epK9Nze9rYRxCGEekSJFC7r3Mub93c97jahCkJ.UMVI1bCy"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "lastName": "Vellden",
       "email": "vvellden1@bloglovin.com",
       "active": false,
-      "ip_address": "22.250.111.92"
+      "ip_address": "22.250.111.92",
+      "password": "$2a$10$NE7kRiAaXmUF0B83Wn1wmeEjx4kP0EHVrgpCr5YlR/bH0n2Aqzae2"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "lastName": "Tym",
       "email": "ftym2@discovery.com",
       "active": true,
-      "ip_address": "206.105.210.42"
+      "ip_address": "206.105.210.42",
+      "password": "$2a$10$J2YztqjMab03HvjiLR01dugcwbS7egCd1FaIrCCBTZV/yb/bxqQrK"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "lastName": "Brook",
       "email": "jbrook3@un.org",
       "active": true,
-      "ip_address": "204.236.42.220"
+      "ip_address": "204.236.42.220",
+      "password": "$2a$10$LXA6WPwpvtwiE5h7LaG1kuum9hxF62eLcT00Ihkf.jDjFhYcVlqwa"
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "lastName": "Mayall",
       "email": "mmayall4@twitter.com",
       "active": true,
-      "ip_address": "158.158.105.47"
+      "ip_address": "158.158.105.47",
+      "password": "$2a$10$qYBk6SVOtSQXR.dP0.cP4uyDzh048EV3E0mJFIRkn/DyzzPQeXSUC"
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "lastName": "Lodwick",
       "email": "blodwick5@shutterfly.com",
       "active": true,
-      "ip_address": "160.47.163.38"
+      "ip_address": "160.47.163.38",
+      "password": "$2a$10$.9Q.s/twMYSODTAJP8R1zOU1GdgnSQ33vOM0fpUTftzPsHVeAuCim"
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "lastName": "Cawthery",
       "email": "rcawthery6@ox.ac.uk",
       "active": true,
-      "ip_address": "65.205.103.248"
+      "ip_address": "65.205.103.248",
+      "password": "$2a$10$IWZ1qmwXBDLUQXzuc9J3U.Quj7vSnfwwbTt5IQ3dW/E1fp7LwpBMW"
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "lastName": "MacNeilage",
       "email": "bmacneilage7@w3.org",
       "active": false,
-      "ip_address": "239.154.14.221"
+      "ip_address": "239.154.14.221",
+      "password": "$2a$10$0zWyvgDCr9k6zn0qB5bhROqetcgSgzfBc8u9R1qjX2RawX1V/7zUG"
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "lastName": "Attwoul",
       "email": "jattwoul8@ft.com",
       "active": false,
-      "ip_address": "60.109.23.54"
+      "ip_address": "60.109.23.54",
+      "password": "$2a$10$31Nsr6yIoIMLianvV44ulO4iBRepKvA69usGdGqjLcMg1Es58RTtm"
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "lastName": "Graham",
       "email": "kgraham9@uol.com.br",
       "active": true,
-      "ip_address": "73.228.65.78"
+      "ip_address": "73.228.65.78",
+      "password": "$2a$10$dFng8XyPH4e3A7dxjoSnXOBBCi1oAxato/DZXfoyGPcXWL5mBdhi."
     },
     {
       "id": 11,

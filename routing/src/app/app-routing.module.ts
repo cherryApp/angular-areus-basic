@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './page/about/about.component';
 import { HomeComponent } from './page/home/home.component';
+import { LoginComponent } from './page/login/login.component';
 import { UserEditComponent } from './page/user-edit/user-edit.component';
 import { UsersComponent } from './page/users/users.component';
 
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'customers',
     loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule)
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
   {
     path: '**',

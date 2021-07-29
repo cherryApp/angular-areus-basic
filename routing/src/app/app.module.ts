@@ -11,6 +11,7 @@ import { AboutComponent } from './page/about/about.component';
 import { NavigationComponent } from './common/navigation/navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataAccessModule } from './data-access/data-access.module';
+import { LoginComponent } from './page/login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DataAccessModule } from './data-access/data-access.module';
     UsersComponent,
     UserEditComponent,
     AboutComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
