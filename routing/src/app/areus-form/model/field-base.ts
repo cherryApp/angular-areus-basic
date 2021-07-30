@@ -4,6 +4,8 @@ export class FieldBase<T> {
   value: T;
   key: string;
   label: string;
+  type?: string;
+  options?: {value: string, label: string}[];
   validators?: ValidatorFn[];
   controlType?: string;
   errorMessage?: string;

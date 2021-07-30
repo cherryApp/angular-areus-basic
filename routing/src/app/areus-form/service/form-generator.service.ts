@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { EmailValidator, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AreusFormModule } from '../areus-form.module';
 import { FieldBase } from '../model/field-base';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: AreusFormModule
 })
 export class FormGeneratorService {
 
