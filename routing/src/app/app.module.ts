@@ -13,6 +13,7 @@ import { NavigationComponent } from './common/navigation/navigation.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataAccessModule } from './data-access/data-access.module';
 import { LoginComponent } from './page/login/login.component';
+import { AreusFormModule } from './areus-form/areus-form.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { LoginComponent } from './page/login/login.component';
     DataAccessModule,
     FormsModule,
     ReactiveFormsModule,
+    AreusFormModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
