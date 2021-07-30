@@ -6,6 +6,11 @@ export interface INavItem {
   icon?: string;
 }
 
+export interface ITableColumn {
+  key: string;
+  title: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,6 +21,13 @@ export class ConfigService {
     {url: '/users', text: 'Users', icon: 'fa-users'},
     {url: '/customers', text: 'Customers', icon: 'fa-user-o'},
     {url: '/about', text: 'About', icon: 'fa-book'},
+  ];
+
+  userTableColumns: ITableColumn[] = [
+    {key: 'firstName', title: 'First Name'},
+    {key: 'lastName', title: 'Last Name'},
+    {key: 'email', title: 'Email'},
+    {key: 'ip_address', title: 'IP.'},
   ];
 
   constructor() { }
