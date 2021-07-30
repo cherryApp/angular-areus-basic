@@ -26,6 +26,7 @@ import { AreusFormModule } from './areus-form/areus-form.module';
     LoginComponent
   ],
   imports: [
+    AreusFormModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -33,7 +34,6 @@ import { AreusFormModule } from './areus-form/areus-form.module';
     DataAccessModule,
     FormsModule,
     ReactiveFormsModule,
-    AreusFormModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

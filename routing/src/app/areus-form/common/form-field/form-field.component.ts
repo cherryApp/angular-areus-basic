@@ -19,7 +19,7 @@ export class FormFieldComponent implements OnInit {
 
   get isValid(): boolean {
     const control = this.formGroup.controls[this.field.key];
-    return control.valid && control.untouched;
+    return control.valid || control.untouched;
   }
 
 }

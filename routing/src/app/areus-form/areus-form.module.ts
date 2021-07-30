@@ -14,6 +14,9 @@ import { FormFieldComponent } from './common/form-field/form-field.component';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+  ],
+  exports: [
+    FormComponent,
   ]
 })
 export class AreusFormModule { }

@@ -1,1 +1,5 @@
-<p>user-edit works!</p>
+<div class="row">
+  <div class="col-4 offset-4">
+    <app-areus-form *ngIf="user" [fieldList]="fields" (submitted)="onSubmit($event)"></app-areus-form>
+  </div>
+</div>

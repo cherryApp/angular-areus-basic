@@ -4,7 +4,7 @@ import { AreusFormModule } from '../areus-form.module';
 import { FieldBase } from '../model/field-base';
 
 @Injectable({
-  providedIn: AreusFormModule
+  providedIn: 'root'
 })
 export class FormGeneratorService {
 
